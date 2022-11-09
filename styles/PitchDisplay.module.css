@@ -1,0 +1,40 @@
+.pitchDisplay {
+    display: flex;
+}
+
+.currentWord {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.currentWord .japanese {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.currentWord .english {
+    color: #ccc;
+}
+
+.wordList {
+    border: 1px solid green;
+}
+
+.clickableWord {
+    cursor: pointer;
+}
+
+.clickableWord.current {
+    color: palegreen;
+}
+
+.maruPlot {
+    /* height: 200px;
+    width: 300px; */
+    max-height: 200px;
+    max-width: 300px;
+    border: 1px solid blue;
+}

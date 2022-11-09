@@ -1,0 +1,24 @@
+.container {
+    margin: 0 20% 0 20%;
+}
+
+.navbar {
+    /* background-color: #222; */
+    padding: 4px;
+}
+
+.navbar a {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.navbar a.current {
+    color: pink;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
