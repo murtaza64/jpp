@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import styles from "../styles/Layout.module.css"
-import NavbarLink from "./navbarlink";
+import MultiTierNavbar from "./navbar"
 
 export default function Layout({ children }: { children: ReactNode }) {
 
@@ -9,8 +9,39 @@ export default function Layout({ children }: { children: ReactNode }) {
       <div className={styles.container}>
         <a href="/"><h1>Japanese Pronunciation Pro</h1></a>
         <div className={styles.navbar}>
-          <NavbarLink href="/verbs/masu-form">Masu form</NavbarLink>
-          <NavbarLink href="/nouns/chinese-originated-2-2">Chinese Originated 2+2</NavbarLink>
+          <MultiTierNavbar rootSections={
+            [
+              {
+                name: "Verbs",
+                relPath: "verbs",
+                subsections: [
+                  {
+                    name: "Masu form",
+                    relPath: "masu-form",
+                  },
+                  {
+                    name: "Dictionary form",
+                    relPath: "dictionary-form",
+                  }
+                ]
+              },
+              {
+                name: "Nouns",
+                relPath: "nouns",
+                subsections: [
+                  {
+                    name: "Chinese originated 2+2",
+                    relPath: "chinese-2-2"
+                  },
+                  {
+                    name: "Chinese originated 1+2",
+                    relPath: "chinese-1-2"
+                  }
+                ]
+              }
+            ]
+            }
+          />
         </div>
         <main>{children}</main>
       </div>

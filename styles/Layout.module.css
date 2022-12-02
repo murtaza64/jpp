@@ -9,7 +9,7 @@
 
 .navbar a {
     font-size: 1.2em;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .navbar a:hover {
@@ -18,7 +18,23 @@
 }
 
 .navbar a.current {
-    color: pink;
+    color: var(--pink);
     text-decoration: underline;
     text-underline-offset: 8px;
+}
+
+.navbar a.onpath {
+    text-decoration-color: var(--pink);
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+}
+
+.navbar a.tempselected {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.divider {
+    margin: 0 8px 0 0;
+    font-size: 1.3em;
 }

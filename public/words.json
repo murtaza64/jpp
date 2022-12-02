@@ -2,16 +2,137 @@
     {
         "word": "行きます",
         "moras": ["い", "き", "ま", "す"], 
-        "pitches": [0.8, 1, 0.8, 0.6]
+        "pitches": [0.8, 1, 1, 0.6],
+        "english": "to go",
+        "peak": 2,
+        "audio": "/audio/masu/行きます.wav"
     },
     {
         "word": "帰ります",
         "moras": ["か", "え", "り", "ま", "す"],
-        "pitches": [0.8, 1, 0.8, 0.7, 0.6]
+        "pitches": [0.8, 1, 1, 1, 0.6],
+        "english": "to return (home)",
+        "peak": 3,
+        "audio": "/audio/masu/帰ります.wav"
     },
     {
-        "word": "fakeword",
-        "moras": [],
-        "pitches": []
+        "word": "食べます",
+        "moras": ["た", "べ", "ま", "す"],
+        "pitches": [0.8, 1, 1, 0.6],
+        "english": "to eat",
+        "peak": 2,
+        "audio": "/audio/masu/食べます.wav"
+    },
+    {
+        "word": "飲みます",
+        "moras": ["の", "み", "ま", "す"],
+        "pitches": [0.8, 1, 1, 0.6],
+        "english": "to drink",
+        "peak": 2,
+        "audio": "/audio/masu/飲みます.wav"
+    },
+    {
+        "word": "勉強します",
+        "moras": ["べ", "ん", "きょ", "う", "し", "ま", "す"],
+        "pitches": [0.8, 1, 1, 1, 1, 1, 0.6],
+        "english": "to study",
+        "peak": 5,
+        "audio": "/audio/masu/勉強します.wav"
+    },
+    {
+        "word": "寝ます",
+        "moras": ["ね", "ま", "す"],
+        "pitches": [0.8, 1, 0.6],
+        "english": "to sleep; to go to bed",
+        "peak": 1,
+        "audio": "/audio/masu/寝ます.wav"
+    },
+    {
+        "word": "読みます",
+        "moras": ["よ", "み", "ま", "す"],
+        "pitches": [0.8, 1, 1, 0.6],
+        "english": "to read",
+        "peak": 2,
+        "audio": "/audio/masu/読みます.wav"
+    },
+    {
+        "word": "買います",
+        "moras": ["か", "い", "ま", "す"],
+        "pitches": [0.8, 1, 1, 0.6],
+        "english": "to buy",
+        "peak": 2,
+        "audio": "/audio/masu/買います.wav"
+    },
+    {
+        "word": "来ます",
+        "moras": ["き", "ま", "す"],
+        "pitches": [0.8, 1, 0.6],
+        "english": "to come",
+        "peak": 1,
+        "audio": "/audio/masu/来ます.wav"
+    },
+    {
+        "word": "見ます",
+        "moras": ["み", "ま", "す"],
+        "pitches": [0.8, 1, 0.6],
+        "english": "to see",
+        "peak": 1,
+        "audio": "/audio/masu/見ます.wav"
+    },
+    {
+        "word": "聞きます",
+        "moras": ["き", "き", "ま", "す"],
+        "pitches": [0.8, 1, 1, 0.6],
+        "english": "to listen",
+        "peak": 2,
+        "audio": "/audio/masu/聞きます.wav"
+    },
+    {
+        "word": "します",
+        "moras": ["し", "ま", "す"],
+        "pitches": [0.8, 1, 0.6],
+        "english": "to do",
+        "peak": 1,
+        "audio": "/audio/masu/します.wav"
+    },
+    {
+        "word": "起きます",
+        "moras": ["お", "き", "ま", "す"],
+        "pitches": [0.8, 1, 1, 0.6],
+        "english": "to wake up",
+        "peak": 2,
+        "audio": "/audio/masu/起きます.wav"
+    },
+    {
+        "word": "行きません",
+        "moras": ["い", "き", "ま", "せ", "ん"],
+        "pitches": [0.8, 1, 1, 1, 0.6],
+        "english": "will not go",
+        "peak": 3,
+        "audio": "/audio/masu/行きません.wav"
+    },
+    {
+        "word": "行きますか",
+        "moras": ["い", "き", "ま", "す", "か"],
+        "pitches": [0.6, 0.8, 0.8, 0.4, 1.0],
+        "english": "will you go?",
+        "peak": 2,
+        "audio": "/audio/masu/行きますか.wav"
+    },
+    {
+        "word": "浴びました",
+        "moras": ["あ", "び", "ま", "し", "た"],
+        "pitches": [0.8, 1, 1, 0.8, 0.6],
+        "english": "bathed (in shower/sunlight)",
+        "peak": 2,
+        "audio": "/audio/masu/浴びました.wav"
+    },
+    {
+        "word": "浴びませんでした",
+        "moras": ["あ", "び", "ま", "せ", "ん", "で", "し", "た"],
+        "pitches": [0.8, 1, 1, 1, 0.825, 0.65, 0.475, 0.3],
+        "english": "didn't bathe (in shower/sunlight)",
+        "peak": 3,
+        "audio": "/audio/masu/浴びませんでした.wav"
     }
 ]

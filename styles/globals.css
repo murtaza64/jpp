@@ -9,6 +9,16 @@ body {
 /* main {
   margin: 10px;
 } */
+/*TODO: light mode colors*/
+:root {
+  --text: #eee;
+  --bg: #171717;
+  --blue: #001ee4;
+  --pink: #ffa2e6;
+  --pink-bg: #53354b;
+  --amber: #edae00;
+  --amber-bg: #574000;
+}
 
 a {
   color: inherit;
@@ -24,7 +34,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: #eee;
-    background: #171717;
+    color: var(--text);
+    background: var(--bg);
   }
 }

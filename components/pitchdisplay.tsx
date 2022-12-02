@@ -3,16 +3,19 @@ import styles from "../styles/PitchDisplay.module.css"
 import wordjson from "../public/words.json"
 import { WordMap, WordMapEntry } from "../types";
 
+function getCssProperty(property: string) {
+  return getComputedStyle(document.documentElement)
+    .getPropertyValue(property);
+}
+
 type CurrentWordProps = {
   word: string
-  translation: string
   wordmapsubset: WordMap
 }
 
 function CurrentWord(
   {
     word,
-    translation,
     wordmapsubset
   }: CurrentWordProps 
 ){
@@ -25,12 +28,15 @@ function CurrentWord(
     }
     const wordmapentry = wordmapsubset.get(word)
     if (wordmapentry !== undefined) { 
-      plotCard(wordmapentry.moras, wordmapentry.pitches, canvas)
+      plotCard(wordmapentry, canvas)
     }
   }, [word])
 
-  function plotCard(word: Array<string>, pitches: Array<number>, cvs: HTMLCanvasElement) {
-    var ctx = cvs.getContext("2d");
+  function plotCard(entry: WordMapEntry, cvs: HTMLCanvasElement) {
+    const word = entry.moras;
+    const pitches = entry.pitches;
+    const peak = entry.peak;
+    const ctx = cvs.getContext("2d");
     if (ctx === null) {
       return
     }
@@ -45,6 +51,7 @@ function CurrentWord(
       fg = "#171717"
       bg = "#ccc"
     }
+    const blue = getCssProperty("--blue");
     const moraCount = word.length;
     // cvs.width = moraCount > 9 ? 1.5 * 1200 : 1200;
     // cvs.height = moraCount > 9 ? 1.5 * 800 : 800;
@@ -53,7 +60,7 @@ function CurrentWord(
     const radius = 55;
     const circleLineWidth = 10;
     const margin = (radius+circleLineWidth/2) - (barwidth/2);
-    cvs.height = 800
+    cvs.height = 600
     cvs.width = (moraCount-1)*spacing + moraCount*barwidth + 2*margin;
     const maxPitchHeight = 
     ( cvs.height 
@@ -68,8 +75,8 @@ function CurrentWord(
     ctx.fillStyle = fg;
     ctx.fillRect(margin, 0, (moraCount - 1) * (spacing + barwidth) + barwidth, 25);
     for (var i = 0; i < moraCount; i++) {
-      let height = - (pitches[i] * maxPitchHeight);
-      let xpos = i*spacing + i*barwidth + margin;
+      const height = - (pitches[i] * maxPitchHeight);
+      const xpos = i*spacing + i*barwidth + margin;
       ctx.fillStyle = fg;
       if (word[i].length === 2) {
         ctx.font = "80px Helvetica";
@@ -83,6 +90,9 @@ function CurrentWord(
       ctx.beginPath();
       ctx.arc(xpos + barwidth / 2, height, radius, 0, 2 * Math.PI, false);
       ctx.fillStyle = bg;
+      if (i == peak) {
+        ctx.fillStyle = blue;
+      }
       ctx.fill();
       ctx.lineWidth = circleLineWidth;
       ctx.strokeStyle = fg;
@@ -94,21 +104,19 @@ function CurrentWord(
     <div className={styles.currentWord}>
       {/* <div className={styles.japanese}>{word}</div> */}
       <canvas className={styles.maruPlot} ref={canvasRef}/>
-      <div className={styles.english}>{translation}</div>
+      <div className={styles.english}>{wordmapsubset.get(word)?.english}</div>
     </div>
   )
 }
 
 type Props = {
   words: Array<string>
-  translations: Array<string>
   wordmap: WordMap
 }
 
 export default function PitchDisplay(
   {
     words,
-    translations,
     wordmap
   }: Props
 ) {
@@ -116,6 +124,11 @@ export default function PitchDisplay(
 
   const wordHandleClick = (i: number) => {
     setCurrentWordIndex(i)
+    const entry = wordMapSubset.get(words[i]);
+    if (entry !== undefined) {
+      const audio = new Audio(entry.audio);
+      audio.play();
+    }
   }
 
   const wordList = words.map((word, i) => {
@@ -146,7 +159,6 @@ export default function PitchDisplay(
     <div className={styles.pitchDisplay}>
       <CurrentWord 
         word={words[currentWordIndex]}
-        translation={translations[currentWordIndex]}
         wordmapsubset={wordMapSubset}
       />
       <div className={styles.wordList}>

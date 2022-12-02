@@ -1,13 +1,15 @@
 .pitchDisplay {
     display: flex;
+    max-height: 240px;
 }
 
 .currentWord {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
+    padding-right: 32px;
 }
 
 .currentWord .japanese {
@@ -20,7 +22,12 @@
 }
 
 .wordList {
-    border: 1px solid green;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    justify-content: center;
 }
 
 .clickableWord {
@@ -28,13 +35,13 @@
 }
 
 .clickableWord.current {
-    color: palegreen;
+    color: var(--pink);
 }
 
 .maruPlot {
     /* height: 200px;
     width: 300px; */
     max-height: 200px;
-    max-width: 300px;
-    border: 1px solid blue;
+    max-width: 268px;
+    /* border: 1px solid blue; */
 }
