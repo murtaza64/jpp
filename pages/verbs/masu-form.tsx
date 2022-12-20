@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import PitchDisplay from '../../components/pitchdisplay'
-import { WordMap, WordMapEntry } from '../../types'
-import wordlist from "../../public/words.json"
+import { WordMap, WordMapEntry } from '../../wordMap'
+import parseWords from '../../wordMap'
 import styles from "../../styles/Content.module.css"
 
 export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMapEntry]>}) {
   const wordmap = new Map<string, WordMapEntry>(wordmaplist);
+  console.log(wordmap)
   return (
     <>
       <h1> Masu form </h1>
@@ -112,19 +113,6 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
 }
 
 export function getServerSideProps() {
-  const fullWordMap = new Map<string, WordMapEntry>()
-  for (const entry of wordlist) {
-    fullWordMap.set(entry.word, {
-      "pitches": entry.pitches,
-      "moras": entry.moras,
-      "english": entry.english,
-      "peak": entry.peak,
-      "audio": entry.audio
-    })
-  }
-  // const reducedWordMap = new Map<string, WordMapEntry>()
-  // for (const word of allWords) {
-  //   reducedWordMap.set(word, fullWordMap.get(word));
-  // }
+  const fullWordMap = parseWords()
   return {"props": {wordmaplist: Array.from(fullWordMap)}}
 }

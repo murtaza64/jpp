@@ -42,12 +42,12 @@ export default function MultiTierNavbar({rootSections} : Props) {
   const getNavSequence : () => [Section[], number[]] = () => {
     // gets the sequence of `Section`s that lead to the current page
     let pathname = router.pathname;
-    console.log(rootSections)
+    // console.log(rootSections)
     let initial: [Section[], number[], Section[] | undefined] = [new Array<Section>, new Array<number>, rootSections];
-    console.log(pathname.split('/'))
+    // console.log(pathname.split('/'))
     const [seq, indexSeq, _] = pathname.split('/').slice(1).reduce((prev, curr) => {
       let [partialSeq, partialIndexSeq, sections] = prev;
-      console.log(partialSeq, sections, curr);
+      // console.log(partialSeq, sections, curr);
       let ret: [Section[], number[], Section[] | undefined] = [partialSeq, partialIndexSeq, undefined]
       if (sections !== undefined) {
         sections.forEach((section, i) => {
@@ -56,10 +56,10 @@ export default function MultiTierNavbar({rootSections} : Props) {
           }
         });
       }
-      console.log(ret)
+      // console.log(ret)
       return ret
     }, initial)
-    console.log(seq)
+    // console.log(seq)
     return [seq, indexSeq];
   }
 

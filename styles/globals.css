@@ -1,7 +1,7 @@
 html,
 body {
   padding: 0;
-  margin: 10px;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,6 +13,7 @@ body {
 :root {
   --text: #eee;
   --bg: #171717;
+  --surface1: #242428;
   --blue: #001ee4;
   --pink: #ffa2e6;
   --pink-bg: #53354b;

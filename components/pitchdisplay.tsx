@@ -1,7 +1,7 @@
-import { ReactNode, useEffect, useRef, useState } from "react"
+import React, { ReactNode, useEffect, useRef, useState } from "react"
 import styles from "../styles/PitchDisplay.module.css"
 import wordjson from "../public/words.json"
-import { WordMap, WordMapEntry } from "../types";
+import { WordMap, WordMapEntry } from "../wordMap";
 
 function getCssProperty(property: string) {
   return getComputedStyle(document.documentElement)
@@ -126,10 +126,32 @@ export default function PitchDisplay(
     setCurrentWordIndex(i)
     const entry = wordMapSubset.get(words[i]);
     if (entry !== undefined) {
-      const audio = new Audio(entry.audio);
+      const audio = new Audio("/audio/" + entry.category + "/" + words[i] + ".wav");
       audio.play();
     }
   }
+
+  const generateFurigana = (word: string) => (
+    <ruby>
+    {word.split("").map((ch, i) => {
+      const reading = wordmap.get(word)?.furiganaMap.find((r) => r[0] == ch)?.[1];
+      if (reading !== undefined) {
+        return (
+          <React.Fragment key={i}>
+            {ch}<rt>{reading}</rt>
+          </React.Fragment>
+        )
+      }
+      else {
+        return (
+          <React.Fragment key={i}>
+            {ch}
+          </React.Fragment>
+        )
+      }
+    })}
+    </ruby>
+  )
 
   const wordList = words.map((word, i) => {
     let className = styles.clickableWord;
@@ -137,11 +159,12 @@ export default function PitchDisplay(
       className += " " + styles.current
     }
     return (
-    <div 
+    <div
+      key={i}
       className={className}
       onClick={e => wordHandleClick(i)}
     >
-      {word}
+      {generateFurigana(word)}
     </div>
     )
   })
