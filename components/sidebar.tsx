@@ -59,8 +59,8 @@ function CollapsibleSidebarLink({section, depth = 0, basePath = "", visible=true
   else {
     return <>
       <a href={path}>
-        <div className={className}>
-          {section.name}
+        <div className={className + " " + styles.leaf}>
+          🗋 &nbsp;{section.name}
         </div>
       </a>
     </>

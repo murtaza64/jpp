@@ -49,7 +49,10 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
         all verbs in 〜ません form.
       </p>
       <PitchDisplay 
-        words={["行きません"]}
+        words={[
+          "起きません", "行きません", "飲みません", "勉強しません", "寝ません",  "帰りません", "読みません",
+          "食べません", "買いません", "来ません", "見ません", "聞きません", "しません"
+        ]}
         wordmap={wordmap}
       />
       <div className={styles.languageNote}>
@@ -57,6 +60,7 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
         depends on the context of the sentence. To form a command, e.g. "don't do",
         please refer to 〜ないで.
       </div>
+      <br/><br/>
 
       <h2> Question </h2>
       <p>
@@ -65,7 +69,10 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
         sound the same as the regular ます ending explained above.
       </p>
       <PitchDisplay 
-        words={["行きますか"]}
+        words={[
+          "起きますか", "行きますか", "飲みますか", "勉強しますか", "寝ますか", "帰りますか", "読みますか",
+          "食べますか", "買いますか", "来ますか", "見ますか", "聞きますか", "しますか"
+        ]}
         wordmap={wordmap}
       />
       <div className={styles.warning}>
@@ -74,6 +81,7 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
         This is also different from an English question where the pitch climbs across the
         whole word, in Japanese only the pitch of か rises.
       </div>
+      <br/><br/>
 
       <h2> Past </h2>
       <p>
@@ -82,7 +90,10 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
         the samples below until you get the hang of it!
       </p>
       <PitchDisplay 
-        words={["浴びました"]}
+        words={[
+          "浴びました", "書きました", "入りました", "運動しました", "会いました", "作りました", "洗濯しました", "旅行しました",
+          "遊びました", "乗りました", "掃除しました", "デートしました", "泳ぎました", "話しました", "料理しました"
+        ]}
         wordmap={wordmap}
       />
       <div className={styles.languageNote}>
@@ -94,6 +105,7 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
         verb する (します). The pitch of noun part of the compound verb depends on the noun.
         You can read more about this on the Chinese Noun 2+2 page. For now, just practice the verbs above. 
       </div>
+      <br/><br/>
 
       <h2> Negative Past </h2>
       <p>
@@ -105,7 +117,10 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
         you know it!
       </p>
       <PitchDisplay
-        words={["浴びませんでした"]}
+        words={[
+          "浴びませんでした", "書きませんでした", "入りませんでした", "運動しませんでした", "会いませんでした", "作りませんでした", "洗濯しませんでした", "旅行しませんでした",
+          "遊びませんでした", "乗りませんでした", "掃除しませんでした", "デートしませんでした", "泳ぎませんでした", "話しませんでした", "料理しませんでした"
+        ]}
         wordmap={wordmap}
       />
     </> 

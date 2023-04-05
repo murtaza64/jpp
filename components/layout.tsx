@@ -10,6 +10,10 @@ export default function Layout({ children }: { children: ReactNode }) {
       <Sidebar rootSections={
         [
           {
+            name: "Home",
+            relPath: "",
+          },
+          {
             name: "Verbs",
             relPath: "verbs",
             subsections: [

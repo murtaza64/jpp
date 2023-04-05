@@ -1,6 +1,7 @@
 .pitchDisplay {
     display: flex;
     max-height: 240px;
+    justify-content: space-evenly;
 }
 
 .currentWord {
@@ -8,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 300px;
     padding-right: 32px;
 }
@@ -21,17 +23,29 @@
     color: #ccc;
 }
 
-.wordList {
-    /* border: 1px solid green; */
+/* .wordList {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px 16px;
     justify-content: center;
+} */
+
+.wordList {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 16px;
+    align-items: end;
+    grid-auto-flow: column;
 }
 
 .clickableWord {
     cursor: pointer;
+}
+
+.clickableWord:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 .clickableWord.current {

@@ -174,6 +174,9 @@ export default function PitchDisplay(
     if (entry !== undefined) {
       acc.set(cur, entry)
     }
+    else {
+      console.warn("No wordmap entry for " + cur)
+    }
     return acc
   }, new Map<string, WordMapEntry>())
 
