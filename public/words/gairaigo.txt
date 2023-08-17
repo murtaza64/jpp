@@ -1,0 +1,174 @@
+バス
+バ・ス
+1^ .8
+bus
+gairaigo
+ーーー
+パン
+パ・ン
+1^ .8
+bread
+gairaigo
+ーーー
+ペン
+ペ・ン
+1^ .8
+pen
+gairaigo
+ーーー
+メモ
+メ・モ
+1^ .8
+memo
+gairaigo
+ーーー
+ビザ
+ビ・ザ
+1^ .8
+visa
+gairaigo
+ーーー
+キー
+キ・ー
+1^ .8
+key
+gairaigo
+ーーー
+ジャズ
+ジャ・ズ
+1^ .8
+jazz
+gairaigo
+ーーー
+バナナ
+バ・ナ・ナ
+1^ .8 .6
+banana
+gairaigo
+ーーー
+アニメ
+ア・ニ・メ
+1^ .8 .6
+anime
+gairaigo
+ーーー
+ホテル
+ホ・テ・ル
+1^ .8 .6
+hotel
+gairaigo
+ーーー
+オバマ
+オ・バ・マ
+1^ .8 .6
+Obama
+gairaigo
+ーーー
+テニス
+テ・ニ・ス
+1^ .8 .6
+Tennis
+gairaigo
+ーーー
+スキー
+ス・キ・ー
+.8 1^ .8
+ski
+gairaigo
+ーーー
+ブルー
+ブ・ル・－
+.8 1^ .8
+blue
+gairaigo
+ーーー
+ツイン
+ツ・イ・ン
+.8 1^ .8
+twin
+gairaigo
+ーーー
+メール
+メ・－・ル
+.8 1 1
+email
+gairaigo
+ーーー
+ライン
+ラ・イ・ン
+.8 1 1
+LINE (messaging)
+gairaigo
+ーーー
+スタバ
+ス・タ・バ
+.8 1 1
+Starbucks
+gairaigo
+ーーー
+カレー
+カ・レ・－
+.8 1 1
+curry
+gairaigo
+ーーー
+ビジネス
+ビ・ジ・ネ・ス
+1^ .8 .6 .4
+business
+gairaigo
+ーーー
+ソビエト
+ソ・ビ・エ・ト
+1^ .8 .6 .4
+Soviet
+gairaigo
+ーーー
+カロリー
+カ・ロ・リ・－
+1^ .8 .6 .4
+calorie
+gairaigo
+ーーー
+マフラー
+マ・フ・ラ・－
+1^ .8 .6 .4
+muffler (winter scarf)
+gairaigo
+ーーー
+トランプ
+ト・ラ・ン・プ
+.6 1^ .8 .6
+Trump
+gairaigo
+ーーー
+ストレス
+ス・ト・レ・ス
+.6 1^ .8 .6
+stress
+gairaigo
+ーーー
+スピーチ
+ス・ピ・－・チ
+.6 1^ .8 .6
+speech
+gairaigo
+ーーー
+アメリカ
+ア・メ・リ・カ
+.8 .9 1 1
+America
+gairaigo
+ーーー
+メキシコ
+メ・キ・シ・コ
+.8 .9 1 1
+Mexico
+gairaigo
+ーーー
+インスタ
+イ・ン・ス・タ
+.8 .9 1 1
+Instagram
+gairaigo
+ーーー

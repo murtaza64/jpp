@@ -1,0 +1,179 @@
+手伝う
+て・つ・だ・う
+.6 1 1^ .6
+to help
+up-down dictionary
+手・て
+伝・だう
+ーーー
+会う
+あ・う
+1^ .6
+to meet
+up-down dictionary
+会・あ
+ーーー
+食べる
+た・べ・る
+.6 1^ .6
+to eat
+up-down dictionary
+食・た
+ーーー
+帰る
+か・え・る
+1^ .8 .6
+to return
+up-down dictionary
+帰・かえ
+ーーー
+考える
+か・ん・が・え・る
+.65 1 1^ .8 .6
+to think
+up-down dictionary
+考・かんが
+ーーー
+かかる
+か・か・る
+.6 1^ .6
+to require
+up-down dictionary
+ーーー
+作る
+つ・く・る
+.6 1^ .6
+to make
+up-down dictionary
+作・つく
+ーーー
+思う
+お・も・う
+.6 1^ .6
+to think
+up-down dictionary
+思・おも
+ーーー
+話す
+は・な・す
+.6 1^ .6
+to talk
+up-down dictionary
+話・はな
+ーーー
+泳ぐ
+お・よ・ぐ
+.6 1^ .6
+to swim
+up-down dictionary
+泳・およ
+ーーー
+受ける
+う・け・る
+.6 1^ .6
+to receive
+up-down dictionary
+受・う
+ーーー
+見る
+み・る
+1^ .6
+to look
+up-down dictionary
+見・み
+ーーー
+調べる
+し・ら・べ・る
+.6 1 1^ .6
+to look up
+up-down dictionary
+調・しら
+ーーー
+買う
+か・う
+.6 1
+to buy
+flat dictionary
+買・う
+ーーー
+使う
+つ・か・う
+.6 1 1
+to use
+flat dictionary
+使・つか
+ーーー
+聞こえる
+き・こ・え・る
+.6 1 1 1
+to be able to hear
+flat dictionary
+聞・き
+ーーー
+いる
+い・る
+.6 1
+to exist
+flat dictionary
+ーーー
+くれる
+く・れ・る
+.6 1 1
+to give
+flat dictionary
+ーーー
+する
+す・る
+.6 1
+to do
+flat dictionary
+ーーー
+上げる
+あ・げ・る
+.6 1 1
+to give
+flat dictionary
+上・あ
+ーーー
+来る
+く・る
+.6 1
+to come
+flat dictionary
+来・く
+ーーー
+止まる
+と・ま・る
+.6 1 1
+to stop
+flat dictionary
+止・と
+ーーー
+歌う
+う・た・う
+.6 1 1
+to sing
+flat dictionary
+歌・うた
+ーーー
+誘う
+さ・そ・う
+.6 1 1
+to invite
+flat dictionary
+誘・さそ
+ーーー
+踊る
+お・ど・る
+.6 1 1
+to dance
+flat dictionary
+踊・おど
+ーーー
+送る
+お・く・る
+.6 1 1
+to send
+flat dictionary
+送・おく
+ーーー

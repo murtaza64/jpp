@@ -11,7 +11,7 @@ export type WordMapEntry = {
 
 export type WordMap = Map<string, WordMapEntry>
 
-export default function parseWords(path="public/words.txt") : WordMap {
+export default function parseWords(path="public/words/masu.txt") : WordMap {
   let map: WordMap = new Map<string, WordMapEntry>()
   const data = readFileSync(path, {encoding: "utf-8"})
   data.split("ーーー")
@@ -27,6 +27,7 @@ export default function parseWords(path="public/words.txt") : WordMap {
         else
           return parseFloat(v)
       })
+      pitches.pop()
       if (moras.length != pitches.length) {
         throw new Error("error parsing words: pitches length not equal to moras length for " + word)
       }

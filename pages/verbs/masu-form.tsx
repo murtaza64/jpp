@@ -31,7 +31,7 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
       />
       <div className={styles.warning}>
         Some people extend the ま sound when trying to pronounce the 
-        pitch drop, but this isn't correct. All syllables (also called Mora) should 
+        pitch drop, but this isn&apos;t correct. All syllables (also called Mora) should 
         stay the same length.
       </div>
 
@@ -56,8 +56,8 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
         wordmap={wordmap}
       />
       <div className={styles.languageNote}>
-        The 〜ません form expresses either "someone won't do", or "doesn't do". This
-        depends on the context of the sentence. To form a command, e.g. "don't do",
+        The 〜ません form expresses either &quot;someone won&apos;t do&quot;, or `&quot;doesn&apos;t do&quot;. This
+        depends on the context of the sentence. To form a command, e.g. &quot;don&apos;t do&quot;,
         please refer to 〜ないで.
       </div>
       <br/><br/>
@@ -85,7 +85,7 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
 
       <h2> Past </h2>
       <p>
-        Hopefully you're starting to pick up on the pattern that ます stem patterns follow. For
+        Hopefully you&apos;re starting to pick up on the pattern that ます stem patterns follow. For
         past tense 〜ました the pattern continues, the drop also occurs after ま. Keep repeating
         the samples below until you get the hang of it!
       </p>
@@ -113,7 +113,7 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
         occurs in the same spot as the negative form, right after せ.
       </p>
       <p>
-        Congrats! Practice the above rules and you'll be a <i>Japanese Pronounciation Pro</i> before
+        Congrats! Practice the above rules and you&apos;ll be a <i>Japanese Pronounciation Pro</i> before
         you know it!
       </p>
       <PitchDisplay
@@ -128,6 +128,6 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
 }
 
 export function getServerSideProps() {
-  const fullWordMap = parseWords()
+  const fullWordMap = parseWords("public/words/masu.txt")
   return {"props": {wordmaplist: Array.from(fullWordMap)}}
 }

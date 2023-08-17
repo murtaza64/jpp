@@ -268,6 +268,7 @@ export default function PitchDisplay(
     setCurrentWordIndex(i)
     const entry = wordMapSubset.get(words[i]);
     if (entry !== undefined) {
+      console.log("/audio/" + entry.category + "/" + words[i] + ".wav");
       const audio = new Audio("/audio/" + entry.category + "/" + words[i] + ".wav");
       audio.play();
     }

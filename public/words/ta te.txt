@@ -1,0 +1,166 @@
+食べて
+た・べ・て
+1^ .8 .6
+to eat (te-form)
+up-down ta te
+食・た
+ーーー
+食べた
+た・べ・た
+1^ .8 .6
+ate
+up-down ta te
+食・た
+ーーー
+話して
+は・な・し・て
+.8 1^ .8 .6
+to talk (te-form)
+up-down ta te
+話・はな
+ーーー
+話した
+は・な・し・た
+.8 1^ .8 .6
+talked
+up-down ta te
+話・はな
+ーーー
+読んで
+よ・ん・で
+1^ .8 .6
+to read (te-form)
+up-down ta te
+読・よ
+ーーー
+読んだ
+よ・ん・だ
+1^ .8 .6
+read (past)
+up-down ta te
+読・よ
+ーーー
+見て
+み・て
+1^ .8
+to see (te-form)
+up-down ta te
+見・み
+ーーー
+見た
+み・た
+1^ .8
+saw
+up-down ta te
+見・み
+ーーー
+帰って
+か・え・っ・て
+1^ .8 .6 .4
+to return (te-form)
+up-down ta te
+帰・かえ
+ーーー
+帰った
+か・え・っ・た
+1^ .8 .6 .4
+returned
+up-down ta te
+帰・かえ
+ーーー
+考えて
+か・ん・が・え・て
+.8 1 1^ .8 .6
+to think (te-form)
+up-down ta te
+考・かんが
+ーーー
+考えた
+か・ん・が・え・た
+.8 1 1^ .8 .6
+thought
+up-down ta te
+考・かんが
+ーーー
+して
+し・て
+.8 1
+to do (te-form)
+flat ta te
+ーーー
+した
+し・た
+.8 1
+did
+flat ta te
+ーーー
+言って
+い・っ・て
+.8 1 1
+to say (te-form)
+flat ta te
+言・い
+ーーー
+言った
+い・っ・た
+.8 1 1
+said
+flat ta te
+言・い
+ーーー
+教えて
+お・し・え・て
+.8 1 1 1
+to teach (te-form)
+flat ta te
+教・おし
+ーーー
+教えた
+お・し・え・た
+.8 1 1 1
+taught
+flat ta te
+教・おし
+ーーー
+遊んで
+あ・そ・ん・で
+.8 1 1 1
+to play (te-form)
+flat ta te
+遊・あそ
+ーーー
+遊んだ
+あ・そ・ん・だ
+.8 1 1 1
+played
+flat ta te
+遊・あそ
+ーーー
+働いて
+は・た・ら・い・て
+.8 1 1 1 1
+to work (te-form)
+flat ta te
+働・はたら
+ーーー
+働いた
+は・た・ら・い・た
+.8 1 1 1 1
+worked
+flat ta te
+働・はたら
+ーーー
+貸して
+か・し・て
+.8 1 1
+to lend (te-form)
+flat ta te
+貸・か
+ーーー
+貸した
+か・し・た
+.8 1 1
+lent
+flat ta te
+貸・か
+ーーー
