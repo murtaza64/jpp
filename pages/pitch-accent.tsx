@@ -2,7 +2,6 @@ import Head from 'next/head'
 import PitchDisplay from '../components/pitchdisplay'
 import { WordMap, WordMapEntry } from '../wordMap'
 import parseWords from '../wordMap'
-import styles from "../../styles/Content.module.css"
 
 export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMapEntry]>}) {
   const wordmap = new Map<string, WordMapEntry>(wordmaplist);
@@ -59,9 +58,8 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
       As you can see, a Type 1 word is the same as a Type -4 word. The type used depends on what is easier/makes more sense for the given word.
       </p>
 
-      <p>
-        INSERT IMAGE???
-      </p>
+      <img src="images/pitch_accent.jpg" width="1000px"/>
+      
       <br/><br/>
 
       <h2> Principles of Sentence/Phrase Accent </h2>
@@ -77,7 +75,7 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
   )
 }
 
-export function getServerSideProps() {
-  const fullWordMap = parseWords()
-  return {"props": {wordmaplist: Array.from(fullWordMap)}}
-}
+// export function getServerSideProps() {
+//   const fullWordMap = parseWords()
+//   return {"props": {wordmaplist: Array.from(fullWordMap)}}
+// }
