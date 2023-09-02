@@ -33,6 +33,14 @@ export default function Layout({ children }: { children: ReactNode }) {
               {
                 name: "te-form/ta-form",
                 relPath: "te-ta-form",
+              },
+              {
+                name: "Negative form",
+                relPath: "negative-dictionary"
+              },
+              {
+                name: "Negative form conjugations",
+                relPath: "negative-dictionary-conjugations"
               }
             ]
           },
@@ -40,6 +48,10 @@ export default function Layout({ children }: { children: ReactNode }) {
             name: "Nouns",
             relPath: "nouns",
             subsections: [
+              {
+                name: "Chinese originated nouns",
+                relPath: "chinese-originated"
+              },
               {
                 name: "Chinese originated 2+2",
                 relPath: "chinese-2-2"
