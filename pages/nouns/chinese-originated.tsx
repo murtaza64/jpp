@@ -51,15 +51,17 @@ export default function Home({wordmaplist}: {wordmaplist: Array<[string, WordMap
       />
       <br/><br/>
 
-      <SingleWordDisplay
-        word = {"一番"}
-        wordmap={wordmap}
-      />
-
-      <SingleWordDisplay
-        word = {"職業"}
-        wordmap={wordmap}
-      />
+      <div className={styles.overviewPitches}>
+        <SingleWordDisplay
+          word = {"一番"}
+          wordmap={wordmap}
+        />
+        <SingleWordDisplay
+          word = {"職業"}
+          wordmap={wordmap}
+        />
+      </div>
+      
 
       <h2> Chinese 2+2 Nouns </h2>
       <p>

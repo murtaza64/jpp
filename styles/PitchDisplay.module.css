@@ -4,6 +4,26 @@
     justify-content: space-evenly;
 }
 
+.singleWordDisplay {
+    width:auto;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.overviewPitches {
+    display: flex;
+    flex-direction: row;
+}
+
+.singleCurrentWord {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+}
+
 .currentWord {
     /* border: 1px solid white; */
     display: flex;

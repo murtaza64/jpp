@@ -102,7 +102,9 @@ type Props = {
       ctx.restore();
     }
     return (
-      <div className={styles.currentWord}>
+      <div
+        className={styles.singleCurrentWord}
+      >
         {/* <div className={styles.japanese}>{word}</div> */}
         <canvas className={styles.maruPlot} ref={canvasRef}/>
         <div className={styles.english}>{wordmap.get(word)?.english}</div>
@@ -116,7 +118,7 @@ export default function SingleWordDisplay(
       wordmap
     }: Props
   ) {
-  
+
     const wordHandleClick = () => {
       const entry = wordmap.get(word)
       if (entry !== undefined) {
@@ -125,11 +127,11 @@ export default function SingleWordDisplay(
         audio.play();
       }
     }
-  
+
     return (
       <div 
-        className={styles.pitchDisplay}
-        onClick={e => wordHandleClick}
+        className={styles.singleWordDisplay}
+        onClick={e => wordHandleClick()}
       >
         <CurrentWord 
           word = {word}
@@ -137,6 +139,5 @@ export default function SingleWordDisplay(
         />
       </div>
     )
-    
-    
+  
   }
